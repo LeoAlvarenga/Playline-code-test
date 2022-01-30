@@ -1,0 +1,19 @@
+
+.button {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 8px 14px;
+    color: #686868; 
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &__icon {
+        max-width: 24px;
+        max-height: 24px;
+        margin-right: 10px;
+    }
+}
