@@ -34,11 +34,11 @@ Open the directory where the project was cloned and run the following command in
 
 # Starting the project
 
-Open the directory where the project was cloned and run the following command in the terminal:
+Once the project and all its dependencies have been installed, open the directory where the project was cloned and run the following command in the terminal:
 
 ```npm run server``` or ```yarn server```
 
-This command will start the mock API server, after the server is running, open a new tab in your terminal and run the following command:
+This command will start the mock API server, after the server is running, open a new tab in your terminal in the project directory and run the following command:
 
 ```npm start``` or ```yarn start```
 
