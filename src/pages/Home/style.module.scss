@@ -8,7 +8,7 @@
 }
 
 .divider {
-    min-width: 300px;
+    min-width: 250px;
     border: 0.5px solid #f0f0f0;
     margin: 12px 0;
 }
@@ -17,39 +17,55 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
     padding: 20px 40px;
-    margin: 28px 0;
+    margin: 28px 12px;
     background-color: #f8f8f8;
     border-radius: 30px;
-
+    
     &__header {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 28px;
-
+        text-align: center;
+        
         h1 {
             color: #464646;
             text-transform: uppercase;
             font-weight: bold;
+            font-family: MorganPosterAvec;
+            font-size: 38px;
         }
-
+        
         h2 {
             color: #737373;
             text-transform: uppercase;
+            font-family: MorganPosterAvec;
+            font-weight: bolder;
+            font-size: 22px;
         }
 
+        p {
+            font-size: 14px;
+        }
+        
         .divider {
             border-color: #ddd;
         }
     }
-
+    
     &__content {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        margin-bottom: 14px;
+        
+        .players {
+            display: flex;
+            margin-top: 28px;
+        }
+        
         .buttons-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -84,6 +100,7 @@
 .footer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     &__item {
         padding: 0 8px;

@@ -5,7 +5,7 @@ import s from "./style.module.scss";
 interface PlayerInfoProps extends HTMLAttributes<HTMLDivElement> {
   img: string;
   name: string;
-  points: string;
+  points: number;
 }
 
 const PlayerInfo: React.FC<PlayerInfoProps> = ({ img, name, points, ...rest }) => {
