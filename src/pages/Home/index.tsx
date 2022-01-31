@@ -64,9 +64,9 @@ const Home: React.FC = () => {
 
   return (
     <div className={s.container}>
-      <img src={LogoImg} alt="Playline Sports Lotto logo" />
+      <img src={LogoImg} alt="Playline Sports Lotto logo" className={s.logo} />
       <div className={s.card}>
-        <Progress />
+        <Progress className={s.progress} />
         <div className={s["card__header"]}>
           <h1>Your playline is set!</h1>
           <h2>come back @ 7:30pm to track it live!</h2>

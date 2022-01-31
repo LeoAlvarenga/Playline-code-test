@@ -16,4 +16,8 @@
         max-height: 24px;
         margin-right: 10px;
     }
+
+    @media (max-width: 420px) {
+        font-size: 10px;
+    }
 }

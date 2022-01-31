@@ -40,7 +40,6 @@
             min-width: 34px;
             background-color: #f0f0f0;
 
-
             span {
                 position: absolute;
                 display: flex;
@@ -62,9 +61,36 @@
             }
         }
 
-
         p {
             color: #737373;
+        }
+    }
+
+    @media (max-width: 420px) {
+        min-height: 100px;
+
+        p {
+            font-size: 8px;
+        }
+
+        &__photo {
+            max-width: 42px;
+            max-height: 42px;
+        }
+
+        &__points {
+            .circle {
+                min-height: 30px;
+                min-width: 30px;
+
+                span {
+                    margin-left: -14px;
+                    margin-top: -14px;
+                    width: 28px;
+                    height: 28px;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
