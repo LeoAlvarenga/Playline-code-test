@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes, ReactComponentElement, ReactElement } from "react";
+import React, { ButtonHTMLAttributes, ReactElement } from "react";
 
 import s from "./style.module.scss";
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import LogoImg from "../../assets/img/logo@1x.png";
 import { ReactComponent as MoneyBag } from "../../components/svg/money-bag.svg";
@@ -17,50 +17,12 @@ interface IPlayer {
   points: number;
 }
 
-interface IPlayersList {
-  players: IPlayer[];
-}
-
 const Home: React.FC = () => {
-  const [playersList, setPlayersList] = useState<IPlayersList>({
-    players: [
-      {
-        last_name: "James",
-        points: 28,
-      },
-      {
-        last_name: "Davis",
-        points: 29,
-      },
-      {
-        last_name: "Gordon",
-        points: 16,
-      },
-      {
-        last_name: "Siakam",
-        points: 24,
-      },
-      {
-        last_name: "Leonard",
-        points: 27,
-      },
-      {
-        last_name: "Lowry",
-        points: 18,
-      },
-      {
-        last_name: "Russell",
-        points: 23,
-      },
-    ],
-  });
+  const [playersList, setPlayersList] = useState<IPlayer[]>();
 
-  // useLayoutEffect(() => {
-  //   // playLineApi.get("/playline-test.json").then(res => console.log(res.data));
-
-    fetch("https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json", {}
-    ).then(response => console.log(response));
-  // },[])
+  useEffect(() => {
+     playLineApi.get("/players").then(res => setPlayersList(res.data));
+  },[])
 
   return (
     <div className={s.container}>
@@ -78,8 +40,8 @@ const Home: React.FC = () => {
         </div>
         <div className={s["card__content"]}>
           <div className={s.players}>
-            {playersList.players.length > 0 &&
-              playersList.players.map((player, index) => (
+            {playersList &&
+              playersList.map((player, index) => (
                 <PlayerInfo
                   img={`${
                     process.env.PUBLIC_URL
@@ -87,11 +49,9 @@ const Home: React.FC = () => {
                   name={player.last_name}
                   points={player.points}
                   key={index}
-                  style={{ zIndex: playersList.players.length - index }}
+                  style={{ zIndex: playersList.length - index }}
                 />
               ))}
-            {/* <PlayerInfo img={`${process.env.PUBLIC_URL}/james.png`} name="james" points="28" />
-                <PlayerInfo img={`${process.env.PUBLIC_URL}/james.png`} name="james" points="28" /> */}
           </div>
           <div className={s["buttons-container"]}>
             <Button icon={<NotifyMe />}>notify me</Button>
