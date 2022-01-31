@@ -40,7 +40,7 @@ const Home: React.FC = () => {
         </div>
         <div className={s["card__content"]}>
           <div className={s.players}>
-            {playersList &&
+            {playersList ?
               playersList.map((player, index) => (
                 <PlayerInfo
                   img={`${
@@ -51,7 +51,9 @@ const Home: React.FC = () => {
                   key={index}
                   style={{ zIndex: playersList.length - index }}
                 />
-              ))}
+              )) : (
+                <p>No Players found... Try again Later.</p>
+              )}
           </div>
           <div className={s["buttons-container"]}>
             <Button icon={<NotifyMe />}>notify me</Button>
