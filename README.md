@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+<p align="center">
+   <img src="https://www.playline.com/wp-content/uploads/2019/03/playline-logo-blk@2x-300x44.png" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
 
-## Available Scripts
+# PlayLine Code Test
 
-In the project directory, you can run:
+[![Author](https://img.shields.io/badge/author-LeoAlvarenga-699b33?style=flat-square)](https://github.com/LeoAlvarenga)
+[![Languages](https://img.shields.io/github/languages/count/LeoAlvarenga/Playline-code-test?color=699b33&style=flat-square)](#)
+[![Languages](https://img.shields.io/github/languages/top/LeoAlvarenga/Playline-code-test?color=699b33&style=flat-square)](#)
 
-### `npm start`
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> This project was developed for the PlayLine Front-End code test, the idea is to replicate the layout that was made available and develop its functions as requested in the challenge. The Project was created in React using TypeScript and consumes information from a mock API provided in the code test.
 
-### `npm test`
+# Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**You will need to install [Node.js](https://nodejs.org/en/download/) or [Yarn](https://yarnpkg.com/) and [Git](https://git-scm.com/) on your machine (if you haven't already installed it), to clone the repository via HTTPS, run this command line in your terminal in the desired folder:**
 
-### `npm run build`
+```git clone https://github.com/LeoAlvarenga/Playline-code-test.git```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+SSH URLs allow access to Git repositories via the SSH security protocol. If you have a valid SSH key registered to your Github account, you can clone the repository using this command:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```git clone git@github.com:LeoAlvarenga/Playline-code-test.git```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**Installing Dependencies**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Open the directory where the project was cloned and run the following command in the terminal:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```npm install``` or ```yarn```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Starting the project
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Open the directory where the project was cloned and run the following command in the terminal:
 
-## Learn More
+```npm start``` or ```yarn start```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+The project will run in development mode.
+
+Open the URL http://localhost:3000 to view the project in your browser.
+
+The page will reload if you make any changes to the code.
+
+You will also have access to the Errors list in the Console.
+
+This project was created with [Create React App](https://github.com/facebook/create-react-app).
+
+# About the project
+
+This project was built using the following technologies:
+
+**React**
+[React](https://reactjs.org/) is a JavaScript library for building user interfaces.
+
+**TypeScript**
+[TypeScript](https://www.typescriptlang.org/) is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. It was used to make the treatment of the data returned by the api easier, in addition to helping the creation and use of components complementing the intellisense of vscode.
+
+**Sass**
+[Sass](https://sass-lang.com/) is the most mature, stable, and powerful professional grade CSS extension language in the world. It was used to help to keep things organized and to create style sheets faster enabling things like variables, nested rules, inline imports and more.
+
+**Axios**
+[Axios](https://axios-http.com/) is a simple promise based HTTP client for the browser and node.js. It was used to simplify the HTTP requests to the API.
