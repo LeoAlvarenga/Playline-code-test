@@ -57,13 +57,17 @@ This project was created with [Create React App](https://github.com/facebook/cre
 This project was built using the following technologies:
 
 **React**
+
 [React](https://reactjs.org/) is a JavaScript library for building user interfaces.
 
 **TypeScript**
+
 [TypeScript](https://www.typescriptlang.org/) is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. It was used to make the treatment of the data returned by the api easier, in addition to helping the creation and use of components complementing the intellisense of vscode.
 
 **Sass**
+
 [Sass](https://sass-lang.com/) is the most mature, stable, and powerful professional grade CSS extension language in the world. It was used to help to keep things organized and to create style sheets faster enabling things like variables, nested rules, inline imports and more.
 
 **Axios**
+
 [Axios](https://axios-http.com/) is a simple promise based HTTP client for the browser and node.js. It was used to simplify the HTTP requests to the API.
